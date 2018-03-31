@@ -6,7 +6,7 @@ This demonstrates how to use the Ethereum Whisper (v5) API.
 
 The example assumes that there is a running Whisper v5 node exposing an RPC interface at URL `http://localhost:8545`. For this, you can use `geth` with the folloing parameters:
 
-    $ geth <usual p2p flags> --shh --rpc --rpccorsdomain '*'
+    $ geth --rinkeby --fast --cache=512 console --shh --rpc --rpccorsdomain '*' --ws --wsorigins '*'
 
 `--shh` is the option that enables Whisper v5 for the node.
 
